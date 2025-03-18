@@ -1,24 +1,13 @@
-//
-//  ContentView.swift
-//  week4proj
-//
-//  Created by Mac on 18/09/1446 AH.
-//
-
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        TaskListView()  // Use TaskListView as the root view
     }
 }
 
-#Preview {
-    ContentView()
+struct ContentView_Previews: PreviewProvider {
+    static var previews: some View {
+        ContentView()
+    }
 }
